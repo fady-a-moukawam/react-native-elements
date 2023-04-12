@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "theme/*": ["./src/theme/*"],
+      "assets/*": ["./src/assets/*"],
+      "hoc/*": ["./src/hoc/*"],
+      "network/*": ["./src/network/*"],
+      "components/*": ["./src/components/*"],
+      "context/*": ["src/context/*"],
+      "navigation/*": ["./src/navigation/*"],
+      "storybook/*": ["./storybook/*"],
+      "screens/*": ["./src/screens/*"],
+      "styles/*": ["./src/styles/*"],
+      "hooks/*": ["./src/hooks/*"],
+      "contexts/*": ["./src/contexts/*"],
+      "animation/*": ["./src/animation/*"],
+      "store/*": ["./src/store/*"],
+      "i18n/*": ["./src/i18n/*"],
+      "utils/*": ["./src/utils/*"]
+    }
+  },
+  "exclude": ["node_modules"]
+}
+
