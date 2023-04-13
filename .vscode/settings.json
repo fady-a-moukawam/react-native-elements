@@ -1,6 +1,9 @@
 {
 	"eslint.codeActionsOnSave.rules": null,
 	"cSpell.words": [
-		"Proptypes"
+		"fontawesome",
+		"fortawesome",
+		"Proptypes",
+		"rneui"
 	]
 }

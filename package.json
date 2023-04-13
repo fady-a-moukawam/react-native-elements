@@ -8,7 +8,6 @@
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint . --fix --max-warnings=0",
-    "format": "prettier . --write",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -19,6 +18,7 @@
     "@fortawesome/react-native-fontawesome": "^0.3.0",
     "@rneui/base": "^0.0.0-edge.2",
     "@rneui/themed": "^0.0.0-edge.2",
+    "prop-types": "^15.8.1",
     "react": "18.2.0",
     "react-native": "0.71.6",
     "react-native-appearance": "^0.3.4",
@@ -44,6 +44,7 @@
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-module-resolver": "^1.5.0",
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
     "husky": ">=6",

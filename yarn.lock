@@ -3790,6 +3790,11 @@ eslint-plugin-jsx-a11y@^6.5.1:
     object.fromentries "^2.0.6"
     semver "^6.3.0"
 
+eslint-plugin-module-resolver@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-module-resolver/-/eslint-plugin-module-resolver-1.5.0.tgz#d78c4e59444f49fa9ca5ed3734a8d12a0aa415ad"
+  integrity sha512-fz8oVazFk5jfZRCBgURDIM955QufKePsGNgpu+z/HWedy9HII6jir1PGts+p27rCWWwSw2LXoxS4xll2WH17fw==
+
 eslint-plugin-prettier@^4.2.1:
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/eslint-plugin-prettier/-/eslint-plugin-prettier-4.2.1.tgz#651cbb88b1dab98bfd42f017a12fa6b2d993f94b"
