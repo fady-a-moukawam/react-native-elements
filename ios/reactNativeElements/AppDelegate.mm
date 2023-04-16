@@ -2,6 +2,11 @@
 
 #import <React/RCTBundleURLProvider.h>
 
+#import "RNSplashScreen.h"
+
+#import "reactNativeElements-Swift.h"
+
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -11,7 +16,33 @@
   // They will be passed down to the ViewController used by React Native.
   self.initialProps = @{};
 
-  return [super application:application didFinishLaunchingWithOptions:launchOptions];
+  BOOL success = [super application:application didFinishLaunchingWithOptions:launchOptions];
+  
+   if (success) {
+     //This is where we will put the logic to get access to rootview
+     UIView *rootView = self.window.rootViewController.view;
+     
+     rootView.backgroundColor = [UIColor whiteColor]; // change with your desired backgroundColor
+  
+     Dynamic *t = [Dynamic new];
+     UIView *animationUIView = (UIView *)[t createAnimationViewWithRootView:rootView lottieName:@"splash"]; // change lottieName to your lottie files name
+  
+     animationUIView.backgroundColor = [UIColor whiteColor]; // change backgroundColor
+     animationUIView.frame = rootView.frame;
+     animationUIView.center = rootView.center;
+     animationUIView.contentMode = UIViewContentModeScaleAspectFill; // take full screen
+     
+     // register LottieSplashScreen to RNSplashScreen
+     [RNSplashScreen showLottieSplash:animationUIView inRootView:rootView];
+     // casting UIView type to AnimationView type
+     AnimationView *animationView = (AnimationView *) animationUIView;
+     // play
+     [t playWithAnimationView:animationView];
+     // If you want the animation layout to be forced to remove when hide is called, use this code
+     [RNSplashScreen setAnimationFinished:false];
+   }
+  
+   return success;
 }
 
 - (NSURL *)sourceURLForBridge:(RCTBridge *)bridge
